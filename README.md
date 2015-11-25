@@ -21,4 +21,6 @@
 
 <b>Contenido del bloque práctico:</b>
 
-Comenzaremos un ejercicio básico para construir un formulario, utilizando para ello las directivas nativas imprescindibles de Angular. Posteriormente, el alumno terminará el ejercicio por su cuenta
+Comenzaremos un ejercicio básico para construir un formulario, utilizando para ello las directivas nativas imprescindibles de Angular. Se trabajará de forma individual.
+
+En este repostorio se proporcionará el esqueleto del cual partir para realizar el ejercicio. Los alumnos deberán hacerse un Fork de dicho esqueleto.
