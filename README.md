@@ -59,7 +59,7 @@ Para poder asistir a las katas de Angular será necesario:
 
 Seguiremos los siguientes pasos para lanzar la aplicación:
 * Hacemos un fork (desde la aplicación Web de Git) para copiar el repositorio en nuestra cuenta
-* Desde consola de comandos hacemos un clone del repositorio a nuestra carpeta local (git clone https://github.com/beeva-xxxx/curso-angularjs.git)
+* Desde consola de comandos hacemos un clone del repositorio a nuestra carpeta local (git clone https://github.com/beeva-xxxx/curso_angular_2015-2016.git)
 * Accedemos a la carpeta donde se encuentra el fichero **bower.json**
 * Cambiamos de rama a la que corresponda según la kata (git branch kata-levelx)
 * Arrancamos el servidor con **grunt serve**
