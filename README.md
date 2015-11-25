@@ -1,25 +1,25 @@
 # Curso_angular_2015-2016
 
-<b>KATA 1 (NIVEL BÁSICO)<b>
+**KATA 1 (NIVEL BÁSICO)**
 
-<b>Contenido del bloque teórico:</b>
+**Contenido del bloque teórico:**
 
-    - Introducción
+    > Introducción
     
-    - Data binding
+    > Data binding
     
-    - Controladores
+    > Controladores
     
-    - Ámbitos
+    > Ámbitos
     
-    - Inyección de dependencias
+    > Inyección de dependencias
     
-    - Directivas nativas
+    > Directivas nativas
     
-    - Buenas prácticas
+    > Buenas prácticas
     
 
-<b>Contenido del bloque práctico:</b>
+**Contenido del bloque práctico:**
 
 Comenzaremos un ejercicio básico para construir un formulario, utilizando para ello las directivas nativas imprescindibles de Angular. Se trabajará de forma individual.
 
