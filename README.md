@@ -4,19 +4,19 @@
 
 **Contenido del bloque teórico:**
 
-    > Introducción
+* Introducción
     
-    > Data binding
+* Data binding
     
-    > Controladores
+* Controladores
     
-    > Ámbitos
+* Ámbitos
     
-    > Inyección de dependencias
+* Inyección de dependencias
     
-    > Directivas nativas
+* Directivas nativas
     
-    > Buenas prácticas
+* Buenas prácticas
     
 
 **Contenido del bloque práctico:**
