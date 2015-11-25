@@ -4,15 +4,20 @@
 
 <b>Contenido del bloque teórico:</b>
 
-    <ul>
-    <li>Introducción</li>
-    <li>Data binding</li>
-    <li>Controladores</li>
-    <li>Ámbitos</li>
-    <li>Inyección de dependencias</li>
-    <li>Directivas nativas</li>
-    <li>Buenas prácticas</li>
-    </ul>
+    - Introducción
+    
+    - Data binding
+    
+    - Controladores
+    
+    - Ámbitos
+    
+    - Inyección de dependencias
+    
+    - Directivas nativas
+    
+    - Buenas prácticas
+    
 
 <b>Contenido del bloque práctico:</b>
 
