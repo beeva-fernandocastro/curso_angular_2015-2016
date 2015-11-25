@@ -1,22 +1,17 @@
 # Curso_angular_2015-2016
 
-KATA 1 (NIVEL BÁSICO)
+<b>KATA 1 (NIVEL BÁSICO)<b>
 
 <b>Contenido del bloque teórico:</b>
 
-    - Introducción
-
-    - Data binding
-
-    - Controladores
-
-    - Ámbitos
-
-    - Inyección de dependencias
-
-    - Directivas nativas
-
-    - Buenas prácticas
+    <ul>
+    <li>Introducción</li>
+    <li>Data binding</li>
+    <li>Controladores</li>
+    <li>Ámbitos</li>
+    <li>Inyección de dependencias</li>
+    <li>Directivas nativas</li>
+    <li>Buenas prácticas</li>
 
 <b>Contenido del bloque práctico:</b>
 
