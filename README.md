@@ -57,7 +57,7 @@ Para poder asistir a las katas de Angular será necesario:
     * Bower (una vez instalado, bower update)
     * Node
 
-Seguiremos los siguientes pasos para la instalación:
+Seguiremos los siguientes pasos para lanzar la aplicación:
 * Instalamos Git (apt-get install git)
 * Hacemos un fork (desde la aplicación Web de Git) para copiar el repositorio en nuestra cuenta
 * Desde consola de comandos hacemos un clone del repositorio a nuestra carpeta local (git clone https://github.com/beeva-xxxx/curso-angularjs.git)
