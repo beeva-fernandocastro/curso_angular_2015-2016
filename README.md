@@ -12,6 +12,7 @@
     <li>Inyección de dependencias</li>
     <li>Directivas nativas</li>
     <li>Buenas prácticas</li>
+    </ul>
 
 <b>Contenido del bloque práctico:</b>
 
