@@ -40,10 +40,28 @@ Comenzaremos un ejercicio básico para construir un formulario, utilizando para 
 
 **Contenido del bloque práctico:**
 
-Partiendo del ejercicio realizado en la kata 1, subiremos un poco el nivel de dificultad: añadiremos errores a los campos del formulario, y construiremos una directiva personalizada que servirá como componentes para agilizar el desarrollo.
+Partiendo del ejercicio realizado en la kata 1, subiremos un poco el nivel de dificultad: añadiremos errores a los campos del formulario, y construiremos una directiva personalizada que servirá como componente para agilizar el desarrollo.
 
 
 **REQUISITOS TECNOLÓGICOS**
 
+En este repositorio se proporcionará el esqueleto del cual partir para realizar el ejercicio 1. Los alumnos deberán hacerse un Fork de dicho esqueleto.
+Para los siguientes ejercicios se partirá siempre del ejercicio anterior del propio alumno. Aún así, se entregará la solución de cada ejercicio para poder partir de ahí si se desea.
 
-En este repositorio se proporcionará el esqueleto del cual partir para realizar el ejercicio. Los alumnos deberán hacerse un Fork de dicho esqueleto.
+Para poder asistir a las katas de Angular será necesario:
+* Traer el ordenador
+* Tener instalados los siguientes programas:
+    * Git
+    * Grunt
+    * npm (una vez instalado, npm install)
+    * Bower (una vez instalado, bower update)
+    * Node
+
+Seguiremos los siguientes pasos para la instalación:
+* Instalamos Git (apt-get install git)
+* Hacemos un fork (desde la aplicación Web de Git) para copiar el repositorio en nuestra cuenta
+* Desde consola de comandos hacemos un clone del repositorio a nuestra carpeta local (git clone https://github.com/beeva-xxxx/curso-angularjs.git)
+* Accedemos a la carpeta donde se encuentra el fichero **bower.json**
+* Cambiamos de rama a la que corresponda según la kata (git branch kata-levelx)
+* Arrancamos el servidor con **grunt serve**
+* En cualquier navegador: **http://localhost:9000**
