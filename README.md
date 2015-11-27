@@ -53,7 +53,7 @@ Para poder asistir a las katas de Angular será necesario:
 * Tener instalados los siguientes programas:
     * Git
     * Grunt
-    * npm (una vez instalado, npm install)
+    * NPM (una vez instalado, npm install)
     * Bower (una vez instalado, bower update)
     * Node
 
