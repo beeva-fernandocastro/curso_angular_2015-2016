@@ -1,0 +1,208 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Curso AngularJS</h1>
+
+    <p class="lead">Kata 1</p>
+    <img src="assets/images/beeva.png" alt="Beeva">
+  </div>
+</header>
+
+<div class="container" ng-init="init()">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Formulario:</h1>
+    </div>
+
+    <div class="col-lg-12 ">
+      <div class="carsForm">
+        <ng-form name="carsForm">
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label>Tipo:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <div ng-repeat="configType in options.configurationTypes" class="inline">
+                <input id="type-{{configType.value}}" name="configType" ng-model="customer.type" type="radio"
+                       ng-value="configType.value" ng-change="changeOptions()"/> <span>{{configType.label}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label for="body-engine">Carrocer&iacute;a:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <select id="body-engine" name="body-engine" ng-model="customer.bodyEngine"
+                      ng-options="bodyEngine.value as bodyEngine.label for bodyEngine in options.bodyEngines"
+                      ng-disabled="customer.type === SPORT">
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label for="engine">Motor:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <select id="engine" name="engine" ng-model="customer.engine"
+                      ng-options="engine.value as engine.label for engine in options.engines"
+                      ng-disabled="customer.type === SPORT">
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label for="transmission">Transmisi&oacute;n:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <select id="transmission" name="transmission" ng-model="customer.transmission"
+                      ng-options="transmission.value as transmission.label for transmission in options.transmissions"
+                      ng-disabled="customer.type === SPORT">
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label>Acabado:</label><br/>
+            </div>
+            <div class="col-lg-10">
+              <div ng-repeat="finish in options.finishes" class="inline">
+                <input id="finish-{{finish.value}}" name="finish" ng-model="customer.finish" type="radio"
+                       ng-value="finish.value" ng-disabled="customer.type === SPORT"/> <span>{{finish.label}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label>Ruedas:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <div ng-repeat="tires in options.tires" class="inline">
+                <input id="tires-{{tires.value}}" name="tires" ng-model="customer.tires" type="radio"
+                       ng-disabled="customer.type === SPORT"
+                       ng-value="tires.value"/> <span>{{tires.label}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label>Extras:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <div ng-repeat="extra in options.extras" class="inline">
+                <input id="extra-{{extra.value}}" name="extra-{{extra.value}}" ng-model="customer.extras[$index]"
+                       type="checkbox"
+                       ng-disabled="customer.type === SPORT"
+                       ng-value="extra.value"/> <span>{{extra.label}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label for="color">Color:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <div class="row">
+                <div class="col-lg-1">
+                  <select id="color" name="color" ng-model="customer.color"
+                          ng-options="color.value as color.label for color in options.colors">
+                  </select>
+                </div>
+                <div class="col-lg-2">
+                  <select ng-show="customer.type === SPORT" id="color-sport" name="color-sport"
+                          ng-model="customer.colorSport"
+                          ng-options="color.value as color.label for color in options.colorsSport">
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label for="comments">Observaciones:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <textarea id="comments" name="comments" ng-model="customer.comments"> </textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label for="cp">Código Postal:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <input id="cp" name="cp" ng-model="customer.cp" type="number"/>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+              <label for="email">Email:</label>
+            </div>
+
+            <div class="col-lg-10">
+              <input id="email" name="email" ng-model="customer.email" type="email"/>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-offset-6">
+              <button ng-click="sendForm()">Enviar</button>
+            </div>
+          </div>
+
+        </ng-form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div ng-if="showResult" class="result">
+  <div class="result-box">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="result-box-content">
+          <p ng-show="sendingForm">Enviando...</p>
+
+          <p ng-show="successForm">Hemos recibido correctamente tu solicitud</p>
+
+          <p ng-show="errorForm">Ocurrio un error al procesar el formulario.</p>
+
+          <div class="row">
+            <div class="col-lg-offset-5">
+              <button ng-click="closeResult()">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>Angular Fullstack v2.1.1 |
+      <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+      <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+  </div>
+</footer>
