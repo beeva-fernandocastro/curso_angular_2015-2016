@@ -1,6 +1,6 @@
 # Curso_angular_2015-2016
 
-**KATA 1 (NIVEL INTERMEDIO)**
+**KATA 2 (NIVEL INTERMEDIO)**
 
 **Ejercicio práctico:**
 
