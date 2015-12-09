@@ -6,6 +6,6 @@
 
 Partiendo del ejercicio realizado en la kata 1, subiremos un poco el nivel de dificultad: 
 
-añadiremos errores a los campos del formulario, y 
+ - añadiremos errores a los campos del formulario, y 
 
-construiremos una directiva personalizada para agilizar la construcción del formulario (cada campo del mismo se generará a través de la directiva question),
+ - construiremos una directiva personalizada para agilizar la construcción del formulario (cada campo del mismo se generará a través de la directiva question),
