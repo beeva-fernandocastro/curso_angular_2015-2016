@@ -49,12 +49,7 @@ Partiendo del ejercicio realizado en la kata 1, subiremos un poco el nivel de di
 
 * Servicios
     * Nativos
-    * Personalizados
-	* provider
-	* constant
-	* value
-	* factory
-	* service
+    * Personalizados (provider, constant, value, factory, service)
     
 * Filtros
     * Nativos
@@ -67,7 +62,7 @@ Partiendo del ejercicio realizado en la kata 1, subiremos un poco el nivel de di
 
 **Contenido del bloque práctico:**
 
-Partiendo del ejercicio realizado en la kata 2, contruiremos el modelo de datos utilizado mediante una clase, utilizando para ellos servicios. Además, añadiremos filtros en diferentes partes del formulario.
+Partiendo del ejercicio realizado en la kata 2, construiremos el modelo de datos mediante una clase, utilizando para ello servicios. Además, añadiremos filtros en diferentes partes del formulario.
 
 
 
