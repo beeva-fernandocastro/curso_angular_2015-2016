@@ -43,6 +43,34 @@ Comenzaremos un ejercicio básico para construir un formulario, utilizando para 
 Partiendo del ejercicio realizado en la kata 1, subiremos un poco el nivel de dificultad: añadiremos errores a los campos del formulario, y construiremos una directiva personalizada que servirá como componente para agilizar el desarrollo.
 
 
+**KATA 3 (NIVEL AVANZADO)**
+
+**Contenido del bloque teórico:**
+
+* Servicios
+    * Nativos
+    * Personalizados
+	* provider
+	* constant
+	* value
+	* factory
+	* service
+    
+* Filtros
+    * Nativos
+    * Personalizados
+
+* Transclusión
+
+* Herencia de directivas
+
+
+**Contenido del bloque práctico:**
+
+Partiendo del ejercicio realizado en la kata 2, contruiremos el modelo de datos utilizado mediante una clase, utilizando para ellos servicios. Además, añadiremos filtros en diferentes partes del formulario.
+
+
+
 **REQUISITOS TECNOLÓGICOS**
 
 En este repositorio se proporcionará el esqueleto del cual partir para realizar el ejercicio 1. Los alumnos deberán hacerse un Fork de dicho esqueleto.
