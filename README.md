@@ -6,6 +6,6 @@
 
 Partiendo del ejercicio realizado en la kata 2, añadiremos las siguientes modificaciones:
 
-* Modelo de datos como una clase, son sus métodos get y set, y su constructor
+* Modelo de datos como una clase, con sus métodos get y set, y su constructor
 
 * Añadiremos una serie de filtros en diferentes partes del formulario  
