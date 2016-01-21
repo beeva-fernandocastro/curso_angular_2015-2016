@@ -1,0 +1,16 @@
+<div class="row">
+
+  <!-- etiqueta -->
+  <div class="col-lg-2">
+    <label>{{label}}</label>
+  </div>
+
+  <!-- campo -->
+  <div ng-class="stylecolValue">
+    <div ng-repeat="checkValue in options" class="inline">
+      <input id="{{name}}-{{checkValue.value}}" name="{{name}}-{{checkValue.value}}" ng-model="model[field][$index]" type="checkbox"
+             ng-value="checkValue.value" ng-disabled="disabled"/> <span>{{checkValue.label}}</span>
+    </div>
+  </div>
+
+</div>

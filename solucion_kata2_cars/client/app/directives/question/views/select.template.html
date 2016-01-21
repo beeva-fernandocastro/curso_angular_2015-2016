@@ -1,0 +1,29 @@
+<div class="row">
+
+  <!-- etiqueta -->
+  <div class="col-lg-2">
+    <label for="{{name}}">{{label}}</label>
+  </div>
+
+  <!-- campo -->
+  <div ng-if="!visibility" ng-class="stylecolValue" ng-class="{true: 'has-error'}[form[name].$dirty && form[name].$invalid]">
+    <select ng-if="required" id="{{name}}" name="{{name}}" ng-model="model[field]"
+            ng-options="selBase['value'] as selBase[selAs] for selBase in options"
+            ng-disabled="disabledProp" required>
+      <option value="">{{labelfirst}}</option>
+    </select>
+
+    <select ng-if="!required" id="{{name}}" name="{{name}}" ng-model="model[field]"
+            ng-options="selBase['value'] as selBase[selAs] for selBase in options"
+            ng-disabled="disabledProp" required>
+    </select>
+  </div>
+
+  <!-- errores controlados por Angular -->
+  <div ng-class="stylecolError">
+    <span ng-if="form[name].$dirty && form[name].$invalid">
+        <span class="error" ng-if="form[name].$error.required">Campo obligatorio</span>
+    </span>
+  </div>
+
+</div>

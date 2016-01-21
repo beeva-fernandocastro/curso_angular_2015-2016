@@ -1,0 +1,88 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<!-- cabecera de la vista -->
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Curso AngularJS 2015</h1>
+    <p class="lead">(fernando.castro@beeva.com | juan.ferrer@beeva.com)</p>
+    <p class="lead yellow">Kata 2 (Solución)</p>
+
+    <img src="assets/images/beeva.png" alt="Beeva">
+  </div>
+</header>
+
+<!-- contenido - formulario -->
+<div class="container" ng-init="init()">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Formulario:</h1>
+    </div>
+
+    <div class="col-lg-12 ">
+      <div class="carsForm">
+        <ng-form name="carsForm">
+
+          <div question name="configType" type="radio" label="Tipo:" options="options.configurationTypes" stylecol-value="col-lg-10" form="carsForm" model="customer" field="type" change-radio="changeOptions()"></div>
+
+          <div question name="bodyEngine" type="select" label="Carrocer&iacute;a:" labelfirst="selectText" sel-base="bodyEngine" sel-as="label" options="options.bodyEngines" stylecol-value="col-lg-2" stylecol-error="col-lg-8" form="carsForm" model="customer" field="bodyEngine" disabled-prop="customer.type === SPORT" required="true"></div>
+          <div question name="engine" type="select" label="Motor:" labelfirst="selectText" sel-base="engine" sel-as="label" options="options.engines" stylecol-value="col-lg-2" stylecol-error="col-lg-8" form="carsForm" model="customer" field="engine" disabled-prop="customer.type === SPORT" required="true"></div>
+          <div question name="transmission" type="select" label="Transmisi&oacute;n:" labelfirst="selectText" sel-base="transmission" sel-as="label" options="options.transmissions" stylecol-value="col-lg-2" stylecol-error="col-lg-8" form="carsForm" model="customer" field="transmission" disabled-prop="customer.type === SPORT" required="true"></div>
+
+          <div question name="finish" type="radio" label="Acabado:" options="options.finishes" stylecol-value="col-lg-10" form="carsForm" model="customer" field="finish" disabled="customer.type === SPORT"></div>
+          <div question name="tires" type="radio" label="Ruedas:" options="options.tires" stylecol-value="col-lg-10" form="carsForm" model="customer" field="tires" disabled="customer.type === SPORT"></div>
+
+          <div question name="extra" type="checkbox" label="Extras:" options="options.extras" stylecol-value="col-lg-10" form="carsForm" model="customer" field="extras" disabled="customer.type === SPORT"></div>
+
+          <div question name="color" type="select" label="Color:" labelfirst="selectText" sel-base="color" sel-as="label" options="options.colors" stylecol-value="col-lg-2" stylecol-error="col-lg-8" form="carsForm" model="customer" field="color" required="true"></div>
+          <div question name="colorSport" type="select" labelfirst="selectText" sel-base="color" sel-as="label" options="options.colorsSport" stylecol-value="col-lg-2" stylecol-error="col-lg-8" form="carsForm" model="customer" field="colorSport" visibility="customer.type !== SPORT"></div>
+
+          <div question name="comments" type="textarea" label="Observaciones:" place="Introduzca comentarios adicionales" stylecol-value="col-lg-2" stylecol-error="col-lg-8" form="carsForm" model="customer" field="comments" min="20" mintext="Mínimo de 20 caracteres" max="100" maxtext="Máximo de 100 caracteres" required="true"></div>
+
+          <div question name="cp" type="number" label="Código Postal:" place="Introduzca su cp" stylecol-value="col-lg-2" stylecol-error="col-lg-8" form="carsForm" model="customer" field="cp" min="5" mintext="Mínimo de 5 dígitos" max="5" maxtext="Máximo de 5 dígitos" required="true"></div>
+          <div question name="email" type="email" label="Email:" place="Introduzca su email" stylecol-value="col-lg-2" stylecol-error="col-lg-8" form="carsForm" model="customer" field="email" pattern="ErMail" patterntext="Introduzca una dirección de email válida" max="80" maxtext="Máximo de 80 caracteres" required="true"></div>
+
+          <!-- botón de ejecución -->
+          <div class="row">
+            <div class="col-lg-offset-6">
+              <button ng-click="sendForm()">Enviar</button>
+            </div>
+          </div>
+
+        </ng-form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ventana modal -->
+<div ng-if="showResult" class="result">
+  <div class="result-box">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="result-box-content">
+          <p ng-show="sendingForm">Enviando...</p>
+
+          <p ng-show="successForm">Hemos recibido correctamente tu solicitud</p>
+
+          <p ng-show="errorForm">Ocurrio un error al procesar la solicitud.</p>
+
+          <div class="row">
+            <div class="col-lg-offset-5">
+              <button ng-click="closeResult()">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pie de página -->
+<footer class="footer">
+  <div class="container">
+    <p>Angular Fullstack v2.1.1 |
+      <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+      <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+  </div>
+</footer>

@@ -1,0 +1,16 @@
+<div class="row">
+
+  <!-- etiqueta -->
+  <div class="col-lg-2">
+    <label>{{label}}</label>
+  </div>
+
+  <!-- campo -->
+  <div ng-class="stylecolValue">
+    <div ng-repeat="radioValue in options" class="inline">
+      <input id="{{name}}-{{radioValue.value}}" name="{{name}}" ng-model="model[field]" type="radio"
+             ng-value="radioValue.value" ng-change="execChange()" ng-disabled="disabled"/> <span>{{radioValue.label}}</span>
+    </div>
+  </div>
+
+</div>

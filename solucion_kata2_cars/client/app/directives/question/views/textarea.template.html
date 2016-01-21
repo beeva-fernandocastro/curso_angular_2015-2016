@@ -1,0 +1,23 @@
+<div class="row">
+
+  <!-- etiqueta -->
+  <div class="col-lg-2">
+    <label for="{{name}}">{{label}}</label>
+  </div>
+
+  <!-- campo -->
+  <div ng-class="stylecolValue">
+    <textarea id="{{name}}" name="{{name}}" ng-class="[{true: 'has-error'}[form[name].$dirty && form[name].$invalid],qclassInput]" ng-model="model[field]" ng-minlength="min" ng-maxlength="max" required></textarea>
+  </div>
+
+  <!-- errores controlados por Angular -->
+  <div ng-class="stylecolError">
+    <span ng-if="form[name].$dirty && form[name].$invalid">
+        <span class="error" ng-if="form[name].$error.required">Campo obligatorio</span>
+        <span class="error" ng-if="form[name].$error.minlength">{{mintext}}</span>
+        <span class="error" ng-if="form[name].$error.maxlength">{{maxtext}}</span>
+        <span class="error" ng-if="form[name].$error.pattern">{{patterntext}}</span>
+    </span>
+  </div>
+
+</div>
